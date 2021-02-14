@@ -1,7 +1,8 @@
 type storage is record[
   functionCalled: bool;
   admin: address;
-  number: nat;
+  n1: nat;
+  n2: nat;
 ]
 
 type return is list(operation) * storage
@@ -38,7 +39,8 @@ block {
 
 function handleCallback(const n1 : nat; const n2 : nat; const s : storage) : return is
 block {
-  if n2 mod 2 = 0n then s.number := 33n else s.number := n1;
+  s.n1 := n1;
+  if n2 mod 2 = 0n then s.n2 := 33n else s.n2 := n2;
 } with (noOperations, s)
 
 function main(const action : actions; const s : storage) : return is
