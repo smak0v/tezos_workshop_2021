@@ -38,7 +38,7 @@ block {
 
 function handleCallback(const n1 : nat; const n2 : nat; const s : storage) : return is
 block {
-  if n2 mod 2 = 0n then s.number := n1 else s.number := 33n;
+  if n2 mod 2 = 0n then s.number := 33n else s.number := n1;
 } with (noOperations, s)
 
 function main(const action : actions; const s : storage) : return is
