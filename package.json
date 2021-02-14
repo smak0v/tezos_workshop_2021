@@ -1,0 +1,21 @@
+{
+  "name": "tezos_workshop",
+  "version": "0.0.1",
+  "description": "Tezos workshop 2021",
+  "main": "index.js",
+  "author": "Sergey Makov <makov.sergey.it@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ganache-cli": "6.11.0-tezos.0",
+    "truffle": "^5.5.0-tezos.4"
+  },
+  "scripts": {
+    "start-sandbox": "ganache-cli --flavor tezos --seed alice"
+  },
+  "keywords": [
+    "tezos",
+    "ligo",
+    "blockchain",
+    "truffle"
+  ]
+}
